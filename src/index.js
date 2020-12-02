@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-const contacts = ["James Smith", "Thomas Anderson", "Bruce Wayne"];
+const contacts = [];
 
 ReactDOM.render(
   <React.StrictMode>

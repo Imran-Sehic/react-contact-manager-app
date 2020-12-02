@@ -12,7 +12,7 @@ export default function App(props) {
   return (
     <div>
       <ContactForm handleSubmit={addPerson} />
-      <ContactList data={contacts} />
+      <ContactList data={contacts}/>
     </div>
   );
 }
