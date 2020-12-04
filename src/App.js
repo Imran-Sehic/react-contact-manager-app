@@ -9,10 +9,14 @@ export default function App(props) {
     setContacts([...contacts, name]);
   }
 
+  function removePerson(index) {
+    setContacts([...contacts.filter(contact => contacts.indexOf(contact) !== index)]);
+  }
+
   return (
     <div>
       <ContactForm handleSubmit={addPerson} />
-      <ContactList data={contacts}/>
+      <ContactList data={contacts} removeContact={removePerson}/>
     </div>
   );
 }
